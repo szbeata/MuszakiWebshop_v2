@@ -1,0 +1,34 @@
+<!-- <p>products works!</p> -->
+<!-- {{termekek|json}} -->
+
+<!--Fejléc kiíratása-->
+<div class="row">
+    <div *ngFor="let column of columns" class="col">
+        {{column.text}}
+    </div>
+    <div class="col">  
+        <!-- Actions  ide jönnek majd valami akciók-->
+    </div>
+ </div>
+
+
+<!-- Új rekord felvétele -->
+<div  class="row">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        <input [(ngModel)]="newTermek[oszlop]" type="text" class="form-control">
+    </div>
+    <div class="col">
+        <button (click)="newData()" type="button" id="add" class="btn btn-primary">Add</button>
+    </div>
+</div>
+
+<!-- Táblázat megjelenítése -->
+<div *ngFor="let termek of termekek" class="row">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        <input [(ngModel)]="termek[oszlop]" type="text" class="form-control">
+    </div>
+    <div class="col">
+        <button (click)="updateData(termek)" type="button" id="edit" class="btn btn-primary">Edit</button>
+        <button (click)="deleteData(termek)" type="button" Id="delete" class="btn btn-primary ms-2">Delete</button>
+    </div>
+</div>

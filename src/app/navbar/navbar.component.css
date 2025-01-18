@@ -1,0 +1,20 @@
+nav.navbar.navbar-expand-lg.navbar-light {
+    margin-bottom: 30px;
+}
+a.navbar-brand {
+    color:#FFFFFF;
+    font: 20px
+}
+a.nav-link {
+    color:#FFFFFF;
+    font: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+button#navbarDropdown.nav-link.dropdown-toggle {
+    color:#FFFFFF;
+    font: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+}

@@ -1,0 +1,27 @@
+div.row {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+div.col {
+    font-weight:bold;
+}
+input.table.table-success.table-striped.ng-untouched.ng-pristine.ng-valid {
+    color: #000;
+    border-color: #696D7D;
+    border-style:solid;
+}
+button#delete.btn.btn-primary.ms-2 {
+    background-color: #FFFFFF;
+    border-color: #F45866;
+    color:#F45866;
+}
+button#add.btn.btn-primary{
+    background-color: #696D7D;
+    border-color: #696D7D;
+    color:#FFFFFF;
+}
+button#edit.btn.btn-primary {
+    background-color: #FFFFFF;
+    border-color: #696D7D;
+    color:#696D7D;
+}
