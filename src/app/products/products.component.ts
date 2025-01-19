@@ -11,9 +11,13 @@ export class ProductsComponent {
   termekek: any
   newTermek: any={}
   columns: any
-  gombok: any={}
+  //buttonItems: any
   buttons:any
   oszlopok=["id","name","category","description","price"]
+
+  addButton: any
+  editButton: any
+  delButton: any
 
   constructor(
     private base:BaseService,
@@ -28,11 +32,25 @@ export class ProductsComponent {
     this.config.getLinks().subscribe(
       (res:any)=>{
         console.log('Columns:', res["columns"]),
-        console.log('Gombok:', res["gombok"]),
-        this.columns=res["columns"],
-        this.gombok=res["gombok"]
+        console.log('addButton:', res["addButton"]),
+        this.columns=res["columns"]
+        //this.buttons=res["buttons"]
       }
     )
+
+    this.config.getLinks().subscribe(
+      (res:any)=>{this.addButton=res["addButton"]}
+    )
+
+    this.config.getLinks().subscribe(
+      (res:any)=>{this.editButton=res["editButton"]}
+    )
+
+    this.config.getLinks().subscribe(
+      (res:any)=>{this.delButton=res["delButton"]}
+    )
+
+
   }
   updateData(data:any){
     this.base.updateData(data)

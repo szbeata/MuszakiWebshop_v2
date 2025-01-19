@@ -1,22 +1,30 @@
 {
-"menuItems":
-    [
-        {"link":"products", "text":"Termékeink"}
-    ],
-            
-"columns":
-    [
-        {"key":"id", "text":"Azonosító","type":"number"},
-        {"key":"name", "text":"Megnevezés","type":"text"},
-        {"key":"category", "text":"Kategória","type":"text"},
-        {"key":"description", "text":"Leírás","type":"text"},
-        {"key":"price", "text":"Ár","type":"text"}
-    ],
-    
-"gombok":
-    [
-        {"button":"add", "text":"Hozzáadás"},
-        {"button":"edit", "text":"Módosítás"},
-        {"button":"delete", "text":"Törlés"}
-    ]
+    "menuItems":
+        [
+            {"link":"products", "text":"Termékeink"}
+        ],
+                
+    "columns":
+        [
+            {"key":"id", "text":"Azonosító","type":"number"},
+            {"key":"name", "text":"Megnevezés","type":"text"},
+            {"key":"category", "text":"Kategória","type":"text"},
+            {"key":"description", "text":"Leírás","type":"text"},
+            {"key":"price", "text":"Ár","type":"text"}
+        ],
+        
+    "addButton":
+        [
+            {"addButton":"add", "text":"Hozzáadás"}
+        ],
+
+    "editButton":
+        [
+            {"button":"edit", "text":"Módosítás"}
+        ],
+
+    "delButton":
+        [
+            {"button":"delete", "text":"Törlés"}
+        ]
 }

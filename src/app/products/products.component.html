@@ -17,8 +17,8 @@
     <div *ngFor="let oszlop of oszlopok" class="col">
         <input [(ngModel)]="newTermek[oszlop]" type="text" class="form-control">
     </div>
-    <div class="col">
-        <button (click)="newData()" type="button" id="add" class="btn btn-primary">Add</button>
+    <div *ngFor="let addgomb of addButton" class="col">
+        <button (click)="newData()" type="button" id="add" class="btn btn-primary">{{addgomb.text}}</button>
     </div>
 </div>
 
@@ -27,8 +27,9 @@
     <div *ngFor="let oszlop of oszlopok" class="col">
         <input [(ngModel)]="termek[oszlop]" type="text" class="form-control">
     </div>
-    <div class="col">
-        <button (click)="updateData(termek)" type="button" id="edit" class="btn btn-primary">Edit</button>
-        <button (click)="deleteData(termek)" type="button" Id="delete" class="btn btn-primary ms-2">Delete</button>
+    <div class="col" id="editdelete">
+        <button *ngFor="let editgomb of editButton" (click)="updateData(termek)" type="button" id="edit" class="btn btn-primary">{{editgomb.text}}</button>
+        <button *ngFor="let delgomb of delButton" (click)="deleteData(termek)" type="button" Id="delete" class="btn btn-primary ms-2">{{delgomb.text}}</button>
     </div>
+
 </div>

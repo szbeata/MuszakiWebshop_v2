@@ -1,22 +1,30 @@
 {
-"menuItems":
-    [
-        {"link":"products", "text":"Products"}
-    ],
-        
-"columns":
-    [
-        {"key":"id", "text":"Id","type":"number"},
-        {"key":"name", "text":"Name","type":"text"},
-        {"key":"category", "text":"Category","type":"text"},
-        {"key":"description", "text":"Description","type":"text"},
-        {"key":"price", "text":"Price","type":"text"}
-    ],
+    "menuItems":
+        [
+            {"link":"products", "text":"Products"}
+        ],
+            
+    "columns":
+        [
+            {"key":"id", "text":"Id","type":"number"},
+            {"key":"name", "text":"Name","type":"text"},
+            {"key":"category", "text":"Category","type":"text"},
+            {"key":"description", "text":"Description","type":"text"},
+            {"key":"price", "text":"Price","type":"text"}
+        ],
+    
+    "addButton":
+        [
+            {"addButton":"add", "text":"Add"}
+        ],
 
-"gombok":
-    [
-        {"button":"add", "text":"Add"},
-        {"button":"edit", "text":"Edit"},
-        {"button":"delete", "text":"Delete"}
-    ]
+    "editButton":
+        [
+            {"button":"edit", "text":"Edit"}
+        ],
+
+    "delButton":
+        [
+            {"button":"delete", "text":"Delete"}
+        ]
 }
